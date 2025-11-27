@@ -5,6 +5,20 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.0.2] - 2025-11-28
+
+### Fixed
+
+- 修复模块系统兼容性问题，支持在不同Node.js环境中运行
+- 优化报告生成功能，确保在各种环境下都能正确生成HTML报告
+- 修复文件扩展名问题，使用.cjs扩展名确保CommonJS模块正确加载
+
+### Changed
+
+- 更新bin文件扩展名从.js到.cjs以提高兼容性
+- 移除ES模块语法，改用CommonJS语法以提高兼容性
+- 优化错误处理和用户提示信息
+
 ## [1.3.0] - 2025-11-25
 
 ### Changed
