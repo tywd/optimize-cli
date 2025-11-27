@@ -7,10 +7,13 @@ const path = require('path');
 const fs = require('fs-extra');
 const { performance } = require('perf_hooks');
 
+// 从 package.json 中读取版本号
+const packageJson = require('../package.json');
+
 const program = new Command();
 
 program
-  .version('1.0.4')
+  .version(packageJson.version)
   .description('前端性能优化检测工具')
   .usage('<command> [options]');
 
