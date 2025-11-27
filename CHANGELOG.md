@@ -5,6 +5,12 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.0.5] - 2025-11-28
+
+### Fixed
+
+- 修复文档链接路径问题，将文档链接从.md扩展名更新为.html扩展名
+
 ## [1.0.2] - 2025-11-28
 
 ### Fixed
