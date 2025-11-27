@@ -1,22 +1,16 @@
 #!/usr/bin/env node
 
-import { Command } from 'commander';
-import chalk from 'chalk';
-import ora from 'ora';
-import path from 'path';
-import fs from 'fs-extra';
-import { performance } from 'perf_hooks';
-import { spawn } from 'child_process';
-import { fileURLToPath } from 'url';
-import { dirname } from 'path';
-
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = dirname(__filename);
+const { Command } = require('commander');
+const chalk = require('chalk');
+const ora = require('ora');
+const path = require('path');
+const fs = require('fs-extra');
+const { performance } = require('perf_hooks');
 
 const program = new Command();
 
 program
-  .version('1.0.0')
+  .version('1.0.1')
   .description('前端性能优化检测工具')
   .usage('<command> [options]');
 
